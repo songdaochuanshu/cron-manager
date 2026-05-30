@@ -17,6 +17,7 @@ export default defineNuxtConfig({
   },
   css: ['~/assets/css/main.css'],
   nitro: {
+    preset: 'cloudflare',
     routeRules: {
       '/api/**': { cors: true }
     }

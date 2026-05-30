@@ -6,7 +6,9 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "preview": "nuxt preview",
+    "deploy": "nuxt build && wrangler deploy",
+    "deploy:prod": "nuxt build && wrangler deploy --env production"
   },
   "dependencies": {
     "nuxt": "^3.17.0",
